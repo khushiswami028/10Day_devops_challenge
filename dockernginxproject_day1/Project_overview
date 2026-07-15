@@ -1,0 +1,62 @@
+<h3>Day-1</h3>
+# Dockerized Wedding Website
+
+## 📌 Project Overview
+This mini project demonstrates how to containerize a static website using Docker and deploy it with Nginx.
+
+## 🚀 What I Did
+- Created a custom `Dockerfile`
+- Used the official **Nginx** image as the base image
+- Copied the website files into the Nginx web root
+- Built a Docker image
+- Ran a Docker container exposing **port 80**
+- Verified the website was accessible through the container
+
+## 🛠️ Technologies Used
+- Docker
+- Nginx
+- HTML
+- CSS
+- JavaScript
+- Linux
+- Servers
+- AWS
+
+## 📂 Project Structure
+```
+.
+├── Dockerfile
+├── index.html
+├── css/
+├── js/
+├── images/
+└── fonts/
+```
+
+## 🐳 Docker Commands
+
+### Build the Docker Image
+```bash
+docker build -t wedding-main .
+```
+
+### Run the Container
+```bash
+docker run -d -p 80:80 --name wedding-container wedding-main
+```
+
+### Verify Running Containers
+```bash
+docker ps
+```
+
+## 📖 Learning Outcome
+Through this project, I learned:
+- How Docker images are built
+- How Docker containers work
+- Writing a basic Dockerfile
+- Deploying a static website using Nginx
+- Port mapping using Docker (`80:80`)
+- how to manage AWS security group and all services
+
+---
